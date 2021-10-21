@@ -1,7 +1,11 @@
+body {
+    width: 100%;
+}
+
 .contactHeader {
     background-image: url(../../captured-final-assets/contact-header.jpg);
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: left;
     background-size: cover;
     height: 80vh;
     h2 {
@@ -29,60 +33,167 @@
 
 .contactForm {
     height: 25vh;
-    display:flex;
-    justify-content: flex-end;
     position:relative;
-    .formWrapper {
-        background-color: $wrapColor;
-        width: 880px;
-        height: 520px;
-        position: absolute;
-        bottom: 16vh;
-        left: 420px;
-        border: black 3px solid;
-    }
-    form {
-        background-color: $mainWhite;
+    .contactFormContainer {
         position:absolute;
-        bottom: 22vh;
-        right: 22vh;
-        width: 900px;
-        padding: 40px 20px 20px 20px;
-        text-align: center;
-        span {
-            margin: 40px 20px;
-            input {
-                width: 43.5%;
-                padding: 5px;
-                border-bottom: $mainGreen 3px solid;
-                border-top: none;
-                border-right: none;
-                border-left: none;
-                background-color: #ffffff00
+        width: 65%;
+        height: 65vh;
+        bottom: 16vh;
+        left: 59vh;
+        .formWrapper {
+            background-color: $wrapColor;
+            width: 80%;
+            height: 100%;
+        }
+        form {
+            background-color: $mainWhite;
+            position:absolute;
+            bottom: 4vh;
+            left: 5vh;
+            width: 80%;
+            padding: 40px 20px 20px 20px;
+            text-align: center;
+            span {
+                margin: 40px 20px;
+                input {
+                    width: 43.5%;
+                    padding: 5px;
+                    border-bottom: $mainGreen 3px solid;
+                    border-top: none;
+                    border-right: none;
+                    border-left: none;
+                    background-color: #ffffff00
+                }
+            }
+            div {
+                margin: 20px;
+                text-align: center;
+                #submit {
+                    width: 100%;
+                    padding: 5px;
+                    margin-bottom: 20px;
+                    font-family: 'Playfair Display', serif;
+                    font-weight: bold;
+                    font-style: italic;
+                    font-size: 20px;
+                    letter-spacing: 1px;
+                    line-height: 32px;
+                    text-transform: uppercase;
+                    background-color: $mainGreen;
+                    border: none;
+                }
+                #message {
+                    margin: 35px auto;
+                    padding: 10px;
+                    border: $mainGreen 3px solid;
+                    background-color: #ffffff00;
+                    width: 100%;
+                }
             }
         }
-        div {
-            margin: 20px;
-            text-align: center;
-            #submit {
-                width: 100%;
-                padding: 5px;
-                margin-bottom: 20px;
-                font-family: 'Playfair Display', serif;
-                font-weight: bold;
-                font-style: italic;
-                font-size: 20px;
-                letter-spacing: 1px;
-                line-height: 32px;
-                text-transform: uppercase;
-                background-color: $mainGreen;
-                border: none;
+    }
+    
+}
+
+footer {
+    background-color: $fontColor;
+    p {
+        padding: 10px;
+        color: darken($mainWhite, 8);
+        text-align: center;
+        margin:0;
+    }
+}
+
+
+// Media Queries
+@media only screen and (max-width: 1350px) {
+    .contactForm {
+        .contactFormContainer {
+            left: 50vh;
+            form {
+                span {
+                    input{ 
+                        width: 33%;
+                    }
+                }
             }
-            #message {
-                margin: 35px auto;
-                padding: 10px;
-                border: $mainGreen 3px solid;
-                background-color: #ffffff00
+        }
+    }
+}
+@media only screen and (max-width: 980px) {
+    .greenBackground {
+        height: 110vh;
+    }
+    .contactInfo {
+        width: 100%;
+        position: static;
+        text-align: center;
+    }
+    .contactForm {
+        position:static;
+        .contactFormContainer {
+            display:block;
+            position:static;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            margin-top: 10vh;
+            .formWrapper {
+                display:none;
+            }
+            form {
+                // display: block;
+                position: static;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                span {
+                    input { 
+                        width: 44%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    nav {
+        ul {
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            
+            li {
+                list-style: none;
+                margin: 20px 0;
+                text-align: center;
+                
+                a {
+                    text-decoration: none;
+                    color: $fontColor;
+                    text-transform: uppercase;
+                    border-bottom: #4CEEA700 3px solid;
+                }
+                a:hover {
+                    border-bottom: $mainGreen 3px solid;
+                }
+            }
+        }
+    }
+    .contactHeader h2 {
+        padding-top: 0;
+        
+    }
+    .contactForm {
+        .contactFormContainer {
+            form {
+                span {
+                    input{ 
+                        width: 35%;
+                    }
+                }
             }
         }
     }

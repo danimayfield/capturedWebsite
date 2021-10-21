@@ -6,6 +6,7 @@ nav {
     ul {
         display:flex;
         justify-content: flex-end;
+        
         li {
             list-style: none;
             margin: 20px 40px;
@@ -14,20 +15,15 @@ nav {
                 text-decoration: none;
                 color: $fontColor;
                 text-transform: uppercase;
+                border-bottom: #4CEEA700 3px solid;
+            }
+            a:hover {
+                border-bottom: $mainGreen 3px solid;
             }
         }
     }
 }
 
-footer {
-    background-color: $fontColor;
-    p {
-        padding: 10px;
-        color: darken($mainWhite, 8);
-        text-align: center;
-        margin:0;
-    }
-}
 
 
 

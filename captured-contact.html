@@ -18,7 +18,7 @@
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="./captured-contact.html">Contact</a></li>
             </ul>
         </nav>
         <h2>
@@ -42,24 +42,26 @@
             <p>M5V2D5</p>
         </section>
         <section class="contactForm">
-            <div class="formWrapper"></div>
-            <form action="submission.html" method="POST">
-                <span>
-                    <label for="name" class="sr-only">Your Name:</label>
-                    <input type="text" name="name" id="name" placeholder="Name">
-                </span>
-                <span>
-                    <label for="email" class="sr-only">Your Email Address:</label>
-                    <input type="email" name="email" id="email" placeholder="Email Address">
-                </span>
-                <div>
-                    <label for="message" class="sr-only">Your Message:</label>
-                    <textarea id="message" name="message" rows="13" cols="96" placeholder="Message"></textarea>
-                </div>
-                <div>
-                    <input type="submit" value="Submit" id="submit">
-                </div>
-            </form>
+            <div class="contactFormContainer">
+                <form action="submission.html" method="POST">
+                    <span>
+                        <label for="name" class="sr-only">Your Name:</label>
+                        <input type="text" name="name" id="name" placeholder="Name">
+                    </span>
+                    <span>
+                        <label for="email" class="sr-only">Your Email Address:</label>
+                        <input type="email" name="email" id="email" placeholder="Email Address">
+                    </span>
+                    <div>
+                        <label for="message" class="sr-only">Your Message:</label>
+                        <textarea id="message" name="message" rows="13" placeholder="Message"></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" value="Submit" id="submit">
+                    </div>
+                </form>
+                <div class="formWrapper"></div>
+            </div>
         </section>
     </div>
     <footer>

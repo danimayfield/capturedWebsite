@@ -294,10 +294,14 @@ p {
   color: #2C2C2C;
 }
 
+body {
+  width: 100%;
+}
+
 .contactHeader {
   background-image: url(../../captured-final-assets/contact-header.jpg);
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: left;
   background-size: cover;
   height: 80vh;
 }
@@ -328,36 +332,33 @@ p {
 
 .contactForm {
   height: 25vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
   position: relative;
 }
-.contactForm .formWrapper {
-  background-color: #FDFA69;
-  width: 880px;
-  height: 520px;
+.contactForm .contactFormContainer {
   position: absolute;
+  width: 65%;
+  height: 65vh;
   bottom: 16vh;
-  left: 420px;
-  border: black 3px solid;
+  left: 59vh;
 }
-.contactForm form {
+.contactForm .contactFormContainer .formWrapper {
+  background-color: #FDFA69;
+  width: 80%;
+  height: 100%;
+}
+.contactForm .contactFormContainer form {
   background-color: #FAFAFA;
   position: absolute;
-  bottom: 22vh;
-  right: 22vh;
-  width: 900px;
+  bottom: 4vh;
+  left: 5vh;
+  width: 80%;
   padding: 40px 20px 20px 20px;
   text-align: center;
 }
-.contactForm form span {
+.contactForm .contactFormContainer form span {
   margin: 40px 20px;
 }
-.contactForm form span input {
+.contactForm .contactFormContainer form span input {
   width: 43.5%;
   padding: 5px;
   border-bottom: #4CEEA7 3px solid;
@@ -366,11 +367,11 @@ p {
   border-left: none;
   background-color: #ffffff00;
 }
-.contactForm form div {
+.contactForm .contactFormContainer form div {
   margin: 20px;
   text-align: center;
 }
-.contactForm form div #submit {
+.contactForm .contactFormContainer form div #submit {
   width: 100%;
   padding: 5px;
   margin-bottom: 20px;
@@ -384,13 +385,103 @@ p {
   background-color: #4CEEA7;
   border: none;
 }
-.contactForm form div #message {
+.contactForm .contactFormContainer form div #message {
   margin: 35px auto;
   padding: 10px;
   border: #4CEEA7 3px solid;
   background-color: #ffffff00;
+  width: 100%;
 }
 
+footer {
+  background-color: #2C2C2C;
+}
+footer p {
+  padding: 10px;
+  color: #e6e6e6;
+  text-align: center;
+  margin: 0;
+}
+
+@media only screen and (max-width: 1350px) {
+  .contactForm .contactFormContainer {
+    left: 50vh;
+  }
+  .contactForm .contactFormContainer form span input {
+    width: 33%;
+  }
+}
+@media only screen and (max-width: 980px) {
+  .greenBackground {
+    height: 110vh;
+  }
+
+  .contactInfo {
+    width: 100%;
+    position: static;
+    text-align: center;
+  }
+
+  .contactForm {
+    position: static;
+  }
+  .contactForm .contactFormContainer {
+    display: block;
+    position: static;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 10vh;
+  }
+  .contactForm .contactFormContainer .formWrapper {
+    display: none;
+  }
+  .contactForm .contactFormContainer form {
+    position: static;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  .contactForm .contactFormContainer form span input {
+    width: 44%;
+  }
+}
+@media only screen and (max-width: 760px) {
+  nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  nav ul li {
+    list-style: none;
+    margin: 20px 0;
+    text-align: center;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: #2C2C2C;
+    text-transform: uppercase;
+    border-bottom: #4CEEA700 3px solid;
+  }
+  nav ul li a:hover {
+    border-bottom: #4CEEA7 3px solid;
+  }
+
+  .contactHeader h2 {
+    padding-top: 0;
+  }
+
+  .contactForm .contactFormContainer form span input {
+    width: 35%;
+  }
+}
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -407,14 +498,8 @@ nav ul li a {
   text-decoration: none;
   color: #2C2C2C;
   text-transform: uppercase;
+  border-bottom: #4CEEA700 3px solid;
 }
-
-footer {
-  background-color: #2C2C2C;
-}
-footer p {
-  padding: 10px;
-  color: #e6e6e6;
-  text-align: center;
-  margin: 0;
+nav ul li a:hover {
+  border-bottom: #4CEEA7 3px solid;
 }
