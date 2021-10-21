@@ -343,7 +343,7 @@ p {
   position: absolute;
   bottom: 16vh;
   left: 420px;
-  border: black 1px solid;
+  border: black 3px solid;
 }
 .contactForm form {
   background-color: #FAFAFA;
