@@ -1,0 +1,90 @@
+.contactHeader {
+    background-image: url(../../captured-final-assets/contact-header.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    height: 80vh;
+    h2 {
+        text-align: center;
+        padding-top: 80px;
+    }
+}
+.greenBackground {
+    background-color: $backgroundColor;
+}
+.contactInfo {
+    width: 400px;
+    position: relative;
+    left: 5%;
+    padding-top: 5%;
+    margin-bottom: -5%;
+    h4 {
+        margin: 10px 0 25px 0;
+    }
+}
+.icon {
+    font-size: 30px;
+    padding: 10px;
+}
+
+.contactForm {
+    height: 25vh;
+    display:flex;
+    justify-content: flex-end;
+    position:relative;
+    .formWrapper {
+        background-color: $wrapColor;
+        width: 880px;
+        height: 520px;
+        position: absolute;
+        bottom: 16vh;
+        left: 420px;
+    }
+    form {
+        background-color: $mainWhite;
+        position:absolute;
+        bottom: 22vh;
+        right: 22vh;
+        width: 900px;
+        padding: 40px 20px 20px 20px;
+        text-align: center;
+        span {
+            margin: 40px 20px;
+            input {
+                width: 43.5%;
+                padding: 5px;
+                border-bottom: $mainGreen 3px solid;
+                border-top: none;
+                border-right: none;
+                border-left: none;
+                background-color: #ffffff00
+            }
+        }
+        div {
+            margin: 20px;
+            text-align: center;
+            #submit {
+                width: 100%;
+                padding: 5px;
+                margin-bottom: 20px;
+                font-family: 'Playfair Display', serif;
+                font-weight: bold;
+                font-style: italic;
+                font-size: 20px;
+                letter-spacing: 1px;
+                line-height: 32px;
+                text-transform: uppercase;
+                background-color: $mainGreen;
+                border: none;
+            }
+            #message {
+                margin: 35px auto;
+                padding: 10px;
+                border: $mainGreen 3px solid;
+                background-color: #ffffff00
+            }
+        }
+    }
+}
+
+

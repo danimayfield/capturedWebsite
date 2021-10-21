@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c488cde4e5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Captured Contact</title>
+</head>
+<body>
+    <header class="contactHeader">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <h2>
+            Get In Touch
+        </h2>
+    </header>
+    <div class="greenBackground">
+        <section class="contactInfo">
+            <div class="iconsWrapper">
+                <i class="fab fa-facebook-f icon"></i>
+                <i class="fab fa-instagram icon"></i>
+                <i class="fab fa-twitter icon"></i>
+                <i class="fab fa-whatsapp icon"></i>
+            </div>
+            <h4>
+                Info@Email.com
+            </h4>
+            <p>123-456-7890</p>
+            <p>123 Queen Stree West, Unit 10</p>
+            <p>Toronto, Ontario</p>
+            <p>M5V2D5</p>
+        </section>
+        <section class="contactForm">
+            <div class="formWrapper"></div>
+            <form action="submission.html" method="POST">
+                <span>
+                    <label for="name" class="sr-only">Your Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Name">
+                </span>
+                <span>
+                    <label for="email" class="sr-only">Your Email Address:</label>
+                    <input type="email" name="email" id="email" placeholder="Email Address">
+                </span>
+                <div>
+                    <label for="message" class="sr-only">Your Message:</label>
+                    <textarea id="message" name="message" rows="13" cols="96" placeholder="Message"></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Submit" id="submit">
+                </div>
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>Copyright © 2018 HackerYou</p>
+    </footer>
+</body>

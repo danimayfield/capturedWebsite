@@ -1,0 +1,79 @@
+// COLOUR VARIABLES
+
+$wrapColor: #FDFA69;
+$backgroundColor: #EFFDF3;
+$fontColor: #2C2C2C;
+$mainGreen: #4CEEA7;
+$mainWhite: #FAFAFA;
+
+// TEXT STYLES
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 138px;
+    text-transform: uppercase;
+    color: $fontColor;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 80px;
+    line-height: 92px;
+    text-transform: uppercase;
+    color: $fontColor;
+}
+
+h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 42px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $fontColor;
+}
+
+h4 {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 32px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $fontColor;
+}
+
+nav{
+    ul{
+        li{
+            a{
+                font-family: 'Playfair Display', serif;
+                font-weight: bold;
+                font-style: italic;
+                font-size: 20px;
+                line-height: 29px;
+                letter-spacing: 1px;
+                color: $fontColor;
+            }
+        }
+    }
+}
+
+button {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 1px;
+    color: $fontColor;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    color: $fontColor;
+}
+
