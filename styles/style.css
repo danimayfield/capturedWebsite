@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -406,6 +407,13 @@ footer p {
   margin: 0;
 }
 
+@media only screen and (max-width: 2000px) {
+  .contactForm .contactFormContainer {
+    height: 58vh;
+    bottom: 16vh;
+    left: 65vh;
+  }
+}
 @media only screen and (max-width: 1350px) {
   .contactForm .contactFormContainer {
     left: 50vh;
@@ -500,12 +508,16 @@ header h2 {
   text-align: center;
 }
 
-section {
+.rightSectionBlog {
   float: right;
-  width: 50%;
+  width: 60%;
+}
+.rightSectionBlog .blogTextBorder {
+  border-left: #FDFA69 3px solid;
+  border-bottom: #FDFA69 3px solid;
   position: relative;
 }
-section .photoWrapperBlog {
+.rightSectionBlog .photoWrapperBlog {
   background-color: #FDFA69;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -514,36 +526,166 @@ section .photoWrapperBlog {
       -ms-flex-pack: end;
           justify-content: flex-end;
   position: relative;
-  bottom: 26vh;
-  right: 5vh;
+  bottom: 23vh;
+  right: 3px;
+  width: 97%;
 }
-section .photoWrapperBlog img {
+.rightSectionBlog .photoWrapperBlog img {
   position: relative;
   bottom: 4vh;
   left: 5vh;
   width: 100%;
 }
-section .blogTextBorder {
-  border-left: #FDFA69 3px solid;
-  border-bottom: #FDFA69 3px solid;
-  position: absolute;
-  width: 83%;
-  height: 100vh;
-  right: 22vh;
-  bottom: 2vh;
-}
-section .blogTextContainer {
+.rightSectionBlog .blogTextContainer {
   margin-right: 20%;
-  margin-top: -25%;
+  margin-top: -15%;
+  margin-left: 6%;
 }
-section .blogTextContainer h3 {
+.rightSectionBlog .blogTextContainer h3 {
   margin-bottom: 0;
 }
-section .blogTextContainer p {
+.rightSectionBlog .blogTextContainer p {
   margin-bottom: 40px;
   margin-top: 0;
 }
 
+aside {
+  position: relative;
+}
+aside img {
+  margin-top: 8%;
+  width: 32%;
+  position: relative;
+  z-index: 10;
+}
+aside .asideWrapper {
+  background-color: #FAFAFA;
+  width: 28%;
+  padding-top: 53vh;
+  padding-bottom: 3vh;
+  position: absolute;
+  bottom: 10vh;
+  left: 12vh;
+}
+aside .asideWrapper .textWrapper {
+  margin-left: 5%;
+  margin-right: 10%;
+}
+aside .asideWrapper .textWrapper p a {
+  text-decoration: none;
+  font-weight: bold;
+  font-style: italic;
+  color: #2C2C2C;
+}
+aside .asideWrapper ul {
+  list-style: none;
+}
+aside .asideWrapper ul li {
+  font-family: "Roboto", sans-serif;
+  font-weight: regular;
+  font-size: 20px;
+  line-height: 32px;
+  color: #2C2C2C;
+}
+aside .asideWrapper ul li::before {
+  content: "•";
+  color: #4CEEA7;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.comments {
+  padding-left: 2%;
+}
+.comments .comment1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.comments .comment1 .commentTextWrapper {
+  margin-left: 3%;
+  margin-right: 12%;
+}
+.comments .comment1 .commentTextWrapper .commentDate {
+  margin-top: 0;
+}
+.comments .comment2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 8vh;
+  margin-bottom: 5vh;
+}
+.comments .comment2 .commentTextWrapper {
+  margin-left: 3%;
+  margin-right: 12%;
+}
+.comments .comment2 .commentTextWrapper .commentDate {
+  margin-top: 0;
+}
+
+.commentForm {
+  height: 50vh;
+  position: relative;
+}
+.commentForm form {
+  background-color: #FAFAFA00;
+  position: relative;
+  right: 3vh;
+  width: 95%;
+  padding: 40px 20px 20px 0;
+  text-align: center;
+}
+.commentForm form span {
+  margin: 40px 20px;
+}
+.commentForm form span input {
+  width: 45.5%;
+  padding: 5px;
+  border-bottom: #4CEEA7 3px solid;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  background-color: #ffffff00;
+}
+.commentForm form div {
+  margin: 20px;
+  text-align: center;
+}
+.commentForm form div #submit {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 20px;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 32px;
+  text-transform: uppercase;
+  background-color: #4CEEA7;
+  border: none;
+}
+.commentForm form div #comment {
+  margin: 35px auto;
+  padding: 10px;
+  border: #4CEEA7 3px solid;
+  background-color: #ffffff00;
+  width: 100%;
+}
+
+nav {
+  padding-top: 10px;
+  padding-right: 10%;
+}
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;

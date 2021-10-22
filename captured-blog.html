@@ -17,61 +17,63 @@
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="./captured-blog.html">Blog</a></li>
+                <li><a href="./captured-contact.html">Contact</a></li>
             </ul>
         </nav>
         <h2>
             Blog
         </h2>
     </header>
-    <section>
-        <div class="photoWrapperBlog">
-            <img src="./captured-final-assets/blog-post-image.jpg" alt="Photographer sitting in field of dandelions at sunset taking a photo of the sunset">
-        </div>
-        <div class="blogTextBorder"> </div>
-            <div class="blogTextContainer">
-                <h3>
-                    Finding Great Locations
-                </h3>
-                <p class="blogDate1">
-                    Monday May 4th 2019 by Dieula
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero optio, modi ipsum quo aliquam praesentium neque error voluptatum, ipsa veritatis soluta delectus, officiis libero at adipisci voluptatem amet quos dolores quisquam atque? Error minima repudiandae fugit ea nobis earum est modi id aperiam exercitationem accusamus pariatur illo eveniet delectus, repellendus, laudantium maiores eligendi numquam deserunt corrupti perspiciatis sequi placeat? Libero, modi beatae? Perferendis molestiae odit ratione atque animi consequuntur praesentium et exercitationem delectus quisquam illo nisi non, natus laborum magnam porro cupiditate eum necessitatibus ipsum.<br> Minus deserunt tempora quod autem earum officiis.  Explicabo earum aliquid aperiam eos eum debitis quo esse modi consequatur aut deserunt, consectetur hic impedit magni rem iusto a ratione officiis adipisci provident saepe. Sed excepturi possimus quibusdam tenetur voluptates. <br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam quia nihil minima minus architecto deserunt dolorem esse iusto sit, unde provident maxime blanditiis soluta quidem sequi, sint velit id necessitatibus. <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi expedita ducimus amet omnis. Numquam reiciendis repellendus est facere in? Hic?
-                </p>
+    <section class="rightSectionBlog">
+        <div class="blogTextBorder">
+            <div class="photoWrapperBlog">
+                <img src="./captured-final-assets/blog-post-image.jpg" alt="Photographer sitting in field of dandelions at sunset taking a photo of the sunset">
             </div>
-        
+                <div class="blogTextContainer">
+                    <h3>
+                        Finding Great Locations
+                    </h3>
+                    <p class="blogDate1">
+                        Monday May 4th 2019 by Dieula
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero optio, modi ipsum quo aliquam praesentium neque error voluptatum, ipsa veritatis soluta delectus, officiis libero at adipisci voluptatem amet quos dolores quisquam atque? Error minima repudiandae fugit ea nobis earum est modi id aperiam exercitationem accusamus pariatur illo eveniet delectus, repellendus, laudantium maiores eligendi numquam deserunt corrupti perspiciatis sequi placeat? Libero, modi beatae? Perferendis molestiae odit ratione atque animi consequuntur praesentium et exercitationem delectus quisquam illo nisi non, natus laborum magnam porro cupiditate eum necessitatibus ipsum.<br> Minus deserunt tempora quod autem earum officiis.  Explicabo earum aliquid aperiam eos eum debitis quo esse modi consequatur aut deserunt, consectetur hic impedit magni rem iusto a ratione officiis adipisci provident saepe. Sed excepturi possimus quibusdam tenetur voluptates. <br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam quia nihil minima minus architecto deserunt dolorem esse iusto sit, unde provident maxime blanditiis soluta quidem sequi, sint velit id necessitatibus. <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi expedita ducimus amet omnis. Numquam reiciendis repellendus est facere in? Hic?
+                    </p>
+                </div>
+        </div>
     </section>
     <aside class="clearfix">
         <img src="./captured-final-assets/side-blog-image.jpg" alt="A hand lightly tossing a camera lens in the air with the sea and mountains in the background">
-        <div class="textWrapper">
-            <h4>
-                About Captured
-            </h4>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, labore? <a href="#">Find out more.</a>
-            </p>
-            <h4>
-                Recent Posts
-            </h4>
-            <ul>
-                <li> Lorem ipsum dolor sit amet.</li>
-                <li>Lorem ipsum dolor sit.</li>
-                <li>Lorem, ipsum dolor sit amet consectetur adipisicing.</li>
-                <li>Lorem ipsum dolor sit amet consectetur.</li>
-            </ul>
+        <div class="asideWrapper">
+            <div class="textWrapper">
+                <h4>
+                    About Captured
+                </h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, labore? Lorem ipsum, dolor sit amet. <a href="#">Find out more.</a>
+                </p>
+                <h4>
+                    Recent Posts
+                </h4>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit.</li>
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                </ul>
+            </div>
         </div>
     </aside>
     <div class="clearfix">
-        <section class="comments">
+        <section class="comments rightSectionBlog">
             <h4>
                 Comments:
             </h4>
             <div class="comment1">
                 <img src="./captured-final-assets/comment-1.jpg" alt="Commenter with hat on looking away from camera">
                 <div class="commentTextWrapper">
-                    <p>
+                    <p class="commentDate">
                         Tuesday October 9th, 2018 by Jeremy
                     </p>
                     <p>
@@ -82,7 +84,7 @@
             <div class="comment2">
                 <img src="./captured-final-assets/comment-2.jpg" alt="Commenter with long blonde hair and white shirt smiling">
                 <div class="commentTextWrapper">
-                    <p>
+                    <p class="commentDate">
                         Wednesday October 10th, 2018 by Julia
                     </p>
                     <p>
@@ -93,16 +95,19 @@
             <div class="commentForm">
                 <form action="submission.html" method="POST">
                     <span>
-                        <input type="text" name="name" id="name">
+                        <label for="name" class="sr-only">Your Name:</label>
+                        <input type="text" name="name" id="name" placeholder="Name">
                     </span>
                     <span>
-                        <input type="email" name="email" id="email">
+                        <label for="email" class="sr-only">Your Email Address:</label>
+                        <input type="email" name="email" id="email" placeholder="Email address">
                     </span>
                     <div>
-                        <textarea id="comment" name="comment" rows="7" cols="80"></textarea>
+                        <label for="comment" class="sr-only">Your Comment:</label>
+                        <textarea id="comment" name="comment" rows="7" placeholder="Comment"></textarea>
                     </div>
                     <div>
-                        <input type="submit" value="Post Comment">
+                        <input type="submit" value="Post Comment" id="submit">
                     </div>
                 </form>
             </div>
