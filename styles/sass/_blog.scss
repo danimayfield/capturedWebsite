@@ -1,0 +1,52 @@
+body{
+    background-color: $backgroundColor;
+}
+header {
+    background-image: url(../../captured-final-assets/blog-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+        h2 {
+        text-align: center;
+    }
+}
+section {
+    float: right;
+    width: 50%;
+    position:relative;
+    .photoWrapperBlog {
+        background-color:$wrapColor;
+        display:flex;
+        justify-content: flex-end;
+        position:relative;
+        bottom: 26vh;
+        right: 5vh;
+        img {
+            position:relative;
+            bottom: 4vh;
+            left: 5vh;
+            width: 100%;
+        }
+    }
+    .blogTextBorder {
+        border-left: $wrapColor 3px solid;
+        border-bottom: $wrapColor 3px solid;
+        position: absolute;
+        width: 83%;
+        height: 100vh;
+        right: 22vh;
+        bottom: 2vh;
+    }
+    .blogTextContainer {
+        margin-right: 20%;
+        margin-top: -25%;
+        h3 {
+            margin-bottom: 0;
+        }
+        p {
+            margin-bottom: 40px;
+            margin-top: 0;
+        }
+    }
+}
