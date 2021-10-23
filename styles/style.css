@@ -508,16 +508,16 @@ header h2 {
   text-align: center;
 }
 
-.rightSectionBlog {
+.responsiveFlexContainer .rightSectionBlog {
   float: right;
   width: 60%;
 }
-.rightSectionBlog .blogTextBorder {
+.responsiveFlexContainer .rightSectionBlog .blogTextBorder {
   border-left: #FDFA69 3px solid;
   border-bottom: #FDFA69 3px solid;
   position: relative;
 }
-.rightSectionBlog .photoWrapperBlog {
+.responsiveFlexContainer .rightSectionBlog .blogTextBorder .photoWrapperBlog {
   background-color: #FDFA69;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -530,21 +530,21 @@ header h2 {
   right: 3px;
   width: 97%;
 }
-.rightSectionBlog .photoWrapperBlog img {
+.responsiveFlexContainer .rightSectionBlog .blogTextBorder .photoWrapperBlog img {
   position: relative;
   bottom: 4vh;
   left: 5vh;
   width: 100%;
 }
-.rightSectionBlog .blogTextContainer {
+.responsiveFlexContainer .rightSectionBlog .blogTextContainer {
   margin-right: 20%;
   margin-top: -15%;
   margin-left: 6%;
 }
-.rightSectionBlog .blogTextContainer h3 {
+.responsiveFlexContainer .rightSectionBlog .blogTextContainer h3 {
   margin-bottom: 0;
 }
-.rightSectionBlog .blogTextContainer p {
+.responsiveFlexContainer .rightSectionBlog .blogTextContainer p {
   margin-bottom: 40px;
   margin-top: 0;
 }
@@ -568,8 +568,7 @@ aside .asideWrapper {
   left: 12vh;
 }
 aside .asideWrapper .textWrapper {
-  margin-left: 5%;
-  margin-right: 10%;
+  margin: 0 10% 0 5%;
 }
 aside .asideWrapper .textWrapper p a {
   text-decoration: none;
@@ -648,7 +647,7 @@ aside .asideWrapper ul li::before {
   margin: 40px 20px;
 }
 .commentForm form span input {
-  width: 45.5%;
+  width: 50%;
   padding: 5px;
   border-bottom: #4CEEA7 3px solid;
   border-top: none;
@@ -721,6 +720,143 @@ aside .asideWrapper ul li::before {
 
   .commentForm form span input {
     width: 40%;
+  }
+}
+@media only screen and (max-width: 980px) {
+  .responsiveFlexContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .responsiveFlexContainer .rightSectionBlog {
+    float: none;
+    width: 100%;
+  }
+  .responsiveFlexContainer .rightSectionBlog .photoWrapperBlog {
+    position: relative;
+    top: 1vh;
+    bottom: 0;
+    right: 0;
+  }
+  .responsiveFlexContainer .rightSectionBlog .photoWrapperBlog img {
+    bottom: 4vh;
+    left: 4vh;
+  }
+  .responsiveFlexContainer .rightSectionBlog .blogTextContainer {
+    margin-top: 5%;
+  }
+  .responsiveFlexContainer aside {
+    position: relative;
+  }
+  .responsiveFlexContainer aside img {
+    margin-top: 5%;
+    width: 100%;
+  }
+  .responsiveFlexContainer aside .asideWrapper {
+    width: 80%;
+    margin: 0 10% 10% 10%;
+    padding-top: 5vh;
+    padding-bottom: 3vh;
+    position: static;
+    bottom: 0;
+    left: 0;
+  }
+}
+.rightSectionBlog {
+  float: none;
+  width: 100%;
+}
+.rightSectionBlog h4 {
+  text-align: center;
+  margin: 8vh 0;
+}
+
+.comments .comment1 {
+  margin-left: 3vh;
+}
+.comments .comment2 {
+  margin-left: 3vh;
+}
+
+.commentForm {
+  height: 70vh;
+}
+.commentForm form {
+  position: static;
+  right: 0;
+  width: 100%;
+}
+.commentForm form span input {
+  width: 44%;
+}
+
+@media only screen and (max-width: 760px) {
+  .commentForm form span input {
+    width: 42%;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .commentForm form span input {
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 470px) {
+  header {
+    height: 80vh;
+  }
+
+  .responsiveFlexContainer .rightSectionBlog .photoWrapperBlog img {
+    bottom: 1vh;
+    left: 1vh;
+  }
+
+  .comments {
+    padding-left: 0;
+  }
+  .comments .comment1 {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 0;
+  }
+  .comments .comment1 .commentTextWrapper {
+    margin-left: 8%;
+  }
+  .comments .comment1 img {
+    margin-bottom: 6%;
+    width: 30%;
+  }
+  .comments .comment2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 0;
+  }
+  .comments .comment2 .commentTextWrapper {
+    margin-left: 8%;
+  }
+  .comments .comment2 img {
+    margin-bottom: 6%;
+    width: 30%;
+  }
+
+  .commentForm form span input {
+    width: 37%;
   }
 }
 nav {
