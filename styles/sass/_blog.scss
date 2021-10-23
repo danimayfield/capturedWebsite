@@ -175,3 +175,71 @@ aside {
         }
     }
 }
+
+// Media Queries
+@media only screen and (max-width: 1800px) {
+    .commentForm {
+        form {
+            span {
+                input {
+                    width: 43.5%;
+                }
+           }
+        }
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    aside {
+        .asideWrapper {
+            bottom: 25vh;
+            padding-top: 43vh;
+        }
+    }
+}
+
+@media only screen and (max-width: 1350px) {
+    aside {
+        .asideWrapper {
+            bottom: 43vh;
+            padding-top: 38vh;
+        }
+    }
+}
+@media only screen and (max-width: 1250px) {
+    aside {
+        position:relative;
+        img {
+            width: 35%;
+        }
+        .asideWrapper {
+            width: 35%;
+            padding-top: 2vh;
+            padding-bottom: 3vh;
+            position:relative;
+            bottom: 0;
+            left: 0;
+            .textWrapper {
+                margin-left: 6%;
+                margin-right: 6%;
+            }
+        }
+    }
+    .commentForm {
+        form {
+            span {
+                input {
+                    width: 40%;
+                }
+           }
+        }
+    }
+}
+
+@media only screen and (max-width: 980px) {
+
+}
+
+@media only screen and (max-width: 760px) {
+
+}
