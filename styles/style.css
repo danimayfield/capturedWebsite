@@ -978,6 +978,10 @@ nav ul li a:hover {
   background-color: #4CEEA7;
   border: none;
 }
+.sec2 .art1 .blogTextContainer .blogText button a {
+  text-decoration: none;
+  color: #2C2C2C;
+}
 .sec2 .art2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1018,4 +1022,8 @@ nav ul li a:hover {
   padding: 15px;
   background-color: #4CEEA7;
   border: none;
+}
+.sec2 .art2 .blogTextContainer .blogText button a {
+  text-decoration: none;
+  color: #2C2C2C;
 }
