@@ -1,7 +1,7 @@
 body{
     background-color: $backgroundColor;
 }
-header {
+.blogHeader {
     background-image: url(../../captured-final-assets/blog-header.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -99,7 +99,10 @@ aside {
             }
     }
 }
-
+.rightSectionBlog {
+    float: right;
+    width: 60%;
+}
 .comments {
     padding-left: 2%;
     .comment1 {
@@ -141,7 +144,7 @@ aside {
         span {
             margin: 40px 20px;
             input {
-                width: 50%;
+                width: 45.5%;
                 padding: 5px;
                 border-bottom: $mainGreen 3px solid;
                 border-top: none;
@@ -276,37 +279,38 @@ aside {
             }
         }
     }
-}
-.rightSectionBlog {
-    float: none;
-    width: 100%;
-    h4 {
-        text-align: center;
-        margin: 8vh 0;
-    }
-}
-.comments {
-    .comment1 {
-        margin-left: 3vh;
-    }
-    .comment2 {
-        margin-left: 3vh;
-    }
-}
-
-.commentForm {
-    height: 70vh;
-    form {
-        position:static;
-        right: 0;
+    .comments {
+        float: none;
         width: 100%;
-        span {
-            input {
-                width: 44%;
+        h4 {
+            text-align: center;
+            margin: 8vh 0;
+        }
+    }
+    .comments {
+        .comment1 {
+            margin-left: 3vh;
+        }
+        .comment2 {
+            margin-left: 3vh;
+        }
+    }
+    
+    .commentForm {
+        height: 70vh;
+        form {
+            position:static;
+            right: 0;
+            width: 100%;
+            span {
+                input {
+                    width: 44%;
+                }
             }
         }
     }
 }
+
 
 @media only screen and (max-width: 760px) {
     .commentForm {

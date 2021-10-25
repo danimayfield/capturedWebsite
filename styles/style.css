@@ -287,7 +287,9 @@ button {
   font-size: 20px;
   line-height: 32px;
   letter-spacing: 1px;
+  text-transform: uppercase;
   color: #2C2C2C;
+  padding: 15px;
 }
 
 p {
@@ -497,14 +499,14 @@ body {
   background-color: #EFFDF3;
 }
 
-header {
+.blogHeader {
   background-image: url(../../captured-final-assets/blog-header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 60vh;
 }
-header h2 {
+.blogHeader h2 {
   text-align: center;
 }
 
@@ -595,6 +597,11 @@ aside .asideWrapper ul li::before {
   margin-left: -1em;
 }
 
+.rightSectionBlog {
+  float: right;
+  width: 60%;
+}
+
 .comments {
   padding-left: 2%;
 }
@@ -647,7 +654,7 @@ aside .asideWrapper ul li::before {
   margin: 40px 20px;
 }
 .commentForm form span input {
-  width: 50%;
+  width: 45.5%;
   padding: 5px;
   border-bottom: #4CEEA7 3px solid;
   border-top: none;
@@ -765,35 +772,35 @@ aside .asideWrapper ul li::before {
     bottom: 0;
     left: 0;
   }
-}
-.rightSectionBlog {
-  float: none;
-  width: 100%;
-}
-.rightSectionBlog h4 {
-  text-align: center;
-  margin: 8vh 0;
-}
 
-.comments .comment1 {
-  margin-left: 3vh;
-}
-.comments .comment2 {
-  margin-left: 3vh;
-}
+  .comments {
+    float: none;
+    width: 100%;
+  }
+  .comments h4 {
+    text-align: center;
+    margin: 8vh 0;
+  }
 
-.commentForm {
-  height: 70vh;
-}
-.commentForm form {
-  position: static;
-  right: 0;
-  width: 100%;
-}
-.commentForm form span input {
-  width: 44%;
-}
+  .comments .comment1 {
+    margin-left: 3vh;
+  }
+  .comments .comment2 {
+    margin-left: 3vh;
+  }
 
+  .commentForm {
+    height: 70vh;
+  }
+  .commentForm form {
+    position: static;
+    right: 0;
+    width: 100%;
+  }
+  .commentForm form span input {
+    width: 44%;
+  }
+}
 @media only screen and (max-width: 760px) {
   .commentForm form span input {
     width: 42%;
@@ -883,4 +890,132 @@ nav ul li a {
 }
 nav ul li a:hover {
   border-bottom: #4CEEA7 3px solid;
+}
+
+.homeHeader {
+  background-image: url(../../captured-final-assets/header-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+.homeHeader h1 {
+  text-align: center;
+  padding-top: 45vh;
+  z-index: 10;
+  position: relative;
+}
+
+.photoWrapper1 {
+  position: relative;
+}
+.photoWrapper1 img {
+  position: absolute;
+  right: 0;
+  top: -60vh;
+  border-top: 40px #FDFA69 solid;
+  border-left: 40px #FDFA69 solid;
+  border-bottom: 40px #FDFA69 solid;
+}
+
+.sec1 {
+  padding: 20vh 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.sec1 p {
+  width: 65%;
+}
+.sec1 button {
+  padding: 15px;
+  background-color: #4CEEA7;
+  border: none;
+}
+.sec1 button a {
+  text-decoration: none;
+  color: #2C2C2C;
+}
+
+.sec2 {
+  background-color: #FAFAFA;
+}
+.sec2 .art1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.sec2 .art1 .photoWrapperArt1 {
+  background-color: #FDFA69;
+  position: relative;
+  left: 6%;
+}
+.sec2 .art1 .photoWrapperArt1 img {
+  position: relative;
+  bottom: 3.5vh;
+  right: 6%;
+}
+.sec2 .art1 .blogTextContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.sec2 .art1 .blogTextContainer .blogText {
+  width: 55%;
+}
+.sec2 .art1 .blogTextContainer .blogText button {
+  padding: 15px;
+  background-color: #4CEEA7;
+  border: none;
+}
+.sec2 .art2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+.sec2 .art2 .imageContainer {
+  position: relative;
+  top: 10vh;
+}
+.sec2 .art2 .imageContainer .photoWrapperArt2 {
+  background-color: #FDFA69;
+  position: relative;
+  right: 6%;
+}
+.sec2 .art2 .imageContainer .photoWrapperArt2 img {
+  position: relative;
+  bottom: 3.5vh;
+  left: 6%;
+}
+.sec2 .art2 .blogTextContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 8vh;
+}
+.sec2 .art2 .blogTextContainer .blogText {
+  width: 55%;
+  text-align: right;
+}
+.sec2 .art2 .blogTextContainer .blogText button {
+  padding: 15px;
+  background-color: #4CEEA7;
+  border: none;
 }
