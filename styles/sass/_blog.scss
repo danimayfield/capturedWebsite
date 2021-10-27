@@ -212,6 +212,15 @@ aside {
     }
 }
 @media only screen and (max-width: 1250px) {
+    .responsiveFlexContainer {
+        .rightSectionBlog {
+            .blogTextBorder {
+                .blogTextContainer {
+                    margin-top:-20vh;
+                }
+            }
+        }
+    }
     aside {
         position:relative;
         img {
@@ -247,30 +256,33 @@ aside {
         flex-direction: column-reverse;
         .rightSectionBlog {
             float: none;
-            width: 100%;
-            .photoWrapperBlog {
-                position:relative;
-                top: 1vh;
-                bottom: 0;
-                right: 0;
-                img {
-                    bottom: 4vh;
-                    left: 4vh;
+            width: 90%;
+            .blogTextBorder {
+                .photoWrapperBlog {
+                    position:relative;
+                    top: 1vh;
+                    bottom: 0;
+                    right: 0;
+                    img {
+                        bottom: 3vh;
+                        left: 2vh;
+                    }
+                }
+                .blogTextContainer {
+                    margin-top: 5%;
                 }
             }
-            .blogTextContainer {
-                margin-top: 5%;
-            }
+            
         }
         aside {
             position:relative;
             img {
-                margin-top: 5%;
-                width: 100%;
+                margin: 5% 3% 0 5%;
+                width: 85%;
             }
             .asideWrapper {
                 width: 80%;
-                margin: 0 10% 10% 10%;
+                margin: 0 10% 10% 8%;
                 padding-top: 5vh;
                 padding-bottom: 3vh;
                 position:static;
@@ -282,6 +294,7 @@ aside {
     .comments {
         float: none;
         width: 100%;
+        padding-left: 0;
         h4 {
             text-align: center;
             margin: 8vh 0;
@@ -290,18 +303,29 @@ aside {
     .comments {
         .comment1 {
             margin-left: 3vh;
+            width: 90%;
+            .commentTextWrapper {
+                margin-right: 5%;
+            }
         }
         .comment2 {
             margin-left: 3vh;
+            width: 90%;
+            .commentTextWrapper {
+                margin-right: 5%;
+            }
         }
     }
     
     .commentForm {
         height: 70vh;
+        margin: 0 0 0 0;
+        width: 96%;
         form {
             position:static;
             right: 0;
             width: 100%;
+            padding: 40px 0 20px 0;
             span {
                 input {
                     width: 44%;
@@ -337,7 +361,7 @@ aside {
 }
 
 @media only screen and (max-width: 470px) {
-    header {
+    .blogHeader {
         height: 80vh;
     }
     .responsiveFlexContainer {
@@ -385,6 +409,24 @@ aside {
             span {
                 input {
                     width: 37%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .blogHeader {
+        height: 75vh;
+        h2 {
+            margin-top: -2vh;
+        }
+    }
+    .commentForm {
+        form {
+            span {
+                input {
+                    width: 36%;
                 }
             }
         }

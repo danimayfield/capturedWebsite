@@ -706,6 +706,10 @@ aside .asideWrapper ul li::before {
   }
 }
 @media only screen and (max-width: 1250px) {
+  .responsiveFlexContainer .rightSectionBlog .blogTextBorder .blogTextContainer {
+    margin-top: -20vh;
+  }
+
   aside {
     position: relative;
   }
@@ -741,31 +745,31 @@ aside .asideWrapper ul li::before {
   }
   .responsiveFlexContainer .rightSectionBlog {
     float: none;
-    width: 100%;
+    width: 90%;
   }
-  .responsiveFlexContainer .rightSectionBlog .photoWrapperBlog {
+  .responsiveFlexContainer .rightSectionBlog .blogTextBorder .photoWrapperBlog {
     position: relative;
     top: 1vh;
     bottom: 0;
     right: 0;
   }
-  .responsiveFlexContainer .rightSectionBlog .photoWrapperBlog img {
-    bottom: 4vh;
-    left: 4vh;
+  .responsiveFlexContainer .rightSectionBlog .blogTextBorder .photoWrapperBlog img {
+    bottom: 3vh;
+    left: 2vh;
   }
-  .responsiveFlexContainer .rightSectionBlog .blogTextContainer {
+  .responsiveFlexContainer .rightSectionBlog .blogTextBorder .blogTextContainer {
     margin-top: 5%;
   }
   .responsiveFlexContainer aside {
     position: relative;
   }
   .responsiveFlexContainer aside img {
-    margin-top: 5%;
-    width: 100%;
+    margin: 5% 3% 0 5%;
+    width: 85%;
   }
   .responsiveFlexContainer aside .asideWrapper {
     width: 80%;
-    margin: 0 10% 10% 10%;
+    margin: 0 10% 10% 8%;
     padding-top: 5vh;
     padding-bottom: 3vh;
     position: static;
@@ -776,6 +780,7 @@ aside .asideWrapper ul li::before {
   .comments {
     float: none;
     width: 100%;
+    padding-left: 0;
   }
   .comments h4 {
     text-align: center;
@@ -784,18 +789,29 @@ aside .asideWrapper ul li::before {
 
   .comments .comment1 {
     margin-left: 3vh;
+    width: 90%;
+  }
+  .comments .comment1 .commentTextWrapper {
+    margin-right: 5%;
   }
   .comments .comment2 {
     margin-left: 3vh;
+    width: 90%;
+  }
+  .comments .comment2 .commentTextWrapper {
+    margin-right: 5%;
   }
 
   .commentForm {
     height: 70vh;
+    margin: 0 0 0 0;
+    width: 96%;
   }
   .commentForm form {
     position: static;
     right: 0;
     width: 100%;
+    padding: 40px 0 20px 0;
   }
   .commentForm form span input {
     width: 44%;
@@ -812,7 +828,7 @@ aside .asideWrapper ul li::before {
   }
 }
 @media only screen and (max-width: 470px) {
-  header {
+  .blogHeader {
     height: 80vh;
   }
 
@@ -864,6 +880,18 @@ aside .asideWrapper ul li::before {
 
   .commentForm form span input {
     width: 37%;
+  }
+}
+@media only screen and (max-width: 370px) {
+  .blogHeader {
+    height: 75vh;
+  }
+  .blogHeader h2 {
+    margin-top: -2vh;
+  }
+
+  .commentForm form span input {
+    width: 36%;
   }
 }
 nav {
