@@ -1018,6 +1018,9 @@ nav ul li a:hover {
   width: 55%;
   text-align: right;
 }
+.sec2 .art2 .blogTextContainer .blogText p {
+  text-align: left;
+}
 .sec2 .art2 .blogTextContainer .blogText button {
   padding: 15px;
   background-color: #4CEEA7;
@@ -1026,4 +1029,449 @@ nav ul li a:hover {
 .sec2 .art2 .blogTextContainer .blogText button a {
   text-decoration: none;
   color: #2C2C2C;
+}
+
+.sec3 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 300px 300px;
+  margin: 5% 0 3% 5%;
+}
+.sec3 .topPicksSec {
+  position: relative;
+  margin-left: 12%;
+  margin-right: 8%;
+}
+.sec3 .communitySec {
+  position: relative;
+  margin-right: 15%;
+  margin-left: 3%;
+}
+.sec3 .blogSec {
+  position: relative;
+  margin-left: 12%;
+  margin-right: 8%;
+}
+.sec3 .blogSec i {
+  font-size: 27px;
+}
+.sec3 .getInTouchSec {
+  position: relative;
+  margin-right: 15%;
+  margin-left: 3%;
+}
+.sec3 .icon::after {
+  content: "";
+  width: 47px;
+  height: 47px;
+  border-radius: 50%;
+  background-color: #4CEEA7;
+  display: block;
+  position: absolute;
+  top: 2%;
+  left: 5%;
+  z-index: -1;
+}
+.sec3 i {
+  font-size: 29px;
+  position: absolute;
+  right: 103%;
+  top: 12%;
+  z-index: 0;
+}
+
+.mapImage {
+  background-image: url(../../captured-final-assets/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+}
+
+.thisMonthProfileSec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.thisMonthProfileSec .lastImageContainer {
+  margin: 8% 5% 5% 10%;
+}
+.thisMonthProfileSec .lastImageContainer .photoWrapper2 {
+  background-color: #FDFA69;
+}
+.thisMonthProfileSec .lastImageContainer .photoWrapper2 img {
+  position: relative;
+  bottom: 4vh;
+  right: 4vh;
+}
+.thisMonthProfileSec .blogText {
+  margin: 4% 10% 0 0;
+}
+.thisMonthProfileSec .blogText h3 {
+  margin-bottom: 0;
+}
+.thisMonthProfileSec .blogText button {
+  margin-top: 5%;
+  padding: 15px;
+  background-color: #4CEEA7;
+  border: none;
+}
+.thisMonthProfileSec .blogText button a {
+  text-decoration: none;
+  color: #2C2C2C;
+}
+
+.gallery {
+  background-color: #FAFAFA;
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.gallery .galleryContainer {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.gallery .galleryContainer img {
+  width: 30%;
+}
+
+@media only screen and (max-width: 1550px) {
+  .homeHeader h1 {
+    padding-top: 40vh;
+  }
+
+  .photoWrapper1 {
+    position: relative;
+  }
+  .photoWrapper1 img {
+    right: 0;
+    top: -50vh;
+  }
+
+  .sec1 {
+    padding: 40vh 0 20vh 0;
+  }
+}
+@media only screen and (max-width: 1380px) {
+  .photoWrapper1 img {
+    width: 50%;
+    right: 0;
+    top: -50vh;
+  }
+
+  .sec1 {
+    padding: 20vh 0 20vh 0;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .homeHeader h1 {
+    padding-top: 45vh;
+  }
+
+  .photoWrapper1 img {
+    top: -50vh;
+  }
+
+  .sec1 {
+    padding: 20vh 0 20vh 0;
+  }
+
+  .sec2 .art1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .sec2 .art1 .imageContainer {
+    width: 89%;
+    margin-bottom: 2%;
+  }
+  .sec2 .art1 .imageContainer img {
+    width: 100%;
+  }
+  .sec2 .art1 .blogTextContainer .blogText {
+    width: 75%;
+  }
+  .sec2 .art2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 5vh;
+  }
+  .sec2 .art2 .imageContainer {
+    width: 89%;
+    margin: 2%;
+  }
+  .sec2 .art2 .imageContainer img {
+    width: 100%;
+  }
+  .sec2 .art2 .blogTextContainer .blogText {
+    width: 75%;
+  }
+  .sec2 .art2 .blogTextContainer .blogText p {
+    text-align: right;
+  }
+
+  .thisMonthProfileSec {
+    padding-bottom: 7vh;
+  }
+
+  .gallery {
+    height: 45vh;
+  }
+}
+@media only screen and (max-width: 980px) {
+  .homeHeader h1 {
+    padding-top: 45vh;
+  }
+
+  .photoWrapper1 img {
+    width: 50%;
+    top: -40vh;
+  }
+
+  .sec1 {
+    padding: 10vh 0 20vh 0;
+  }
+  .sec1 p {
+    width: 80%;
+  }
+
+  .thisMonthProfileSec {
+    padding-top: 5vh;
+  }
+
+  .gallery {
+    height: 45vh;
+  }
+}
+@media only screen and (max-width: 760px) {
+  .homeHeader {
+    height: 80vh;
+  }
+  .homeHeader h1 {
+    font-size: 100px;
+    padding-top: 10vh;
+  }
+
+  .photoWrapper1 {
+    width: 100%;
+    text-align: center;
+  }
+  .photoWrapper1 img {
+    position: relative;
+    top: -30vh;
+    border: 40px #FDFA69 solid;
+    width: 90%;
+  }
+
+  .sec1 {
+    margin: -35vh 0 0 0;
+  }
+  .sec1 p {
+    width: 90%;
+  }
+
+  .sec2 .art1 .blogTextContainer .blogText {
+    width: 85%;
+  }
+  .sec2 .art2 .blogTextContainer .blogText {
+    width: 85%;
+  }
+
+  .thisMonthProfileSec {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .thisMonthProfileSec .lastImageContainer {
+    width: 70%;
+  }
+  .thisMonthProfileSec .lastImageContainer .photoWrapper2 img {
+    width: 100%;
+  }
+  .thisMonthProfileSec .blogText {
+    margin: 0 10% 0 10%;
+  }
+
+  .gallery {
+    height: 35vh;
+  }
+}
+@media only screen and (max-width: 670px) {
+  .sec1 {
+    margin: -35vh 0 -5vh 0;
+  }
+
+  .sec3 {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 250px 250px 250px 250px;
+    margin: 5% 0 10% 10%;
+  }
+  .sec3 .topPicksSec {
+    margin-left: 10%;
+  }
+  .sec3 .communitySec {
+    position: relative;
+    margin-left: 10%;
+    margin-right: 8%;
+  }
+  .sec3 .blogSec {
+    margin-left: 10%;
+  }
+  .sec3 .getInTouchSec {
+    position: relative;
+    margin-left: 10%;
+    margin-right: 8%;
+  }
+
+  .mapImage {
+    height: 40vh;
+  }
+}
+@media only screen and (max-width: 570px) {
+  .homeHeader h1 {
+    font-size: 85px;
+    padding-top: 15vh;
+  }
+
+  .sec1 {
+    margin: -8vh 0 -5vh 0;
+  }
+
+  .sec3 {
+    margin: 5% 0 10% 10%;
+  }
+
+  .photoWrapper1 {
+    display: none;
+  }
+
+  .gallery {
+    height: 185vh;
+  }
+  .gallery .galleryContainer {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .gallery .galleryContainer img {
+    width: 90%;
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin: 1%;
+  }
+}
+@media only screen and (max-width: 470px) {
+  .homeHeader {
+    height: 75vh;
+  }
+  .homeHeader h1 {
+    font-size: 75px;
+  }
+
+  .sec1 {
+    margin: -8vh 0 -8vh 0;
+  }
+  .sec1 h3 {
+    text-align: center;
+  }
+  .sec1 button {
+    margin-top: 5%;
+  }
+
+  .sec3 {
+    margin: 5% 0 10% 10%;
+  }
+
+  .gallery {
+    height: 155vh;
+  }
+}
+@media only screen and (max-width: 430px) {
+  .homeHeader {
+    height: 69vh;
+  }
+  .homeHeader h1 {
+    font-size: 65px;
+    padding-top: 3vh;
+  }
+
+  .sec3 {
+    margin: 5% 0 40% 10%;
+  }
+  .sec3 .topPicksSec {
+    margin-bottom: 10%;
+  }
+  .sec3 .communitySec {
+    margin-top: 15%;
+  }
+  .sec3 .blogSec {
+    margin-top: 25%;
+  }
+  .sec3 .getInTouchSec {
+    margin-top: 30%;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .homeHeader {
+    height: 75vh;
+  }
+  .homeHeader h1 {
+    font-size: 50px;
+  }
+
+  .sec3 {
+    margin: 5% 0 100% 10%;
+  }
+  .sec3 h4 {
+    font-size: 25px;
+  }
+  .sec3 .icon::after {
+    width: 40px;
+    height: 40px;
+    top: 8%;
+    left: 5%;
+  }
+  .sec3 i {
+    font-size: 20px;
+    right: 105%;
+    top: 18%;
+  }
+  .sec3 .communitySec {
+    margin-top: 25%;
+  }
+  .sec3 .blogSec {
+    margin-top: 55%;
+  }
+  .sec3 .getInTouchSec {
+    margin-top: 80%;
+  }
 }

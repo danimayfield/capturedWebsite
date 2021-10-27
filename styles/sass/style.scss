@@ -76,7 +76,6 @@ nav {
     background-color: $mainWhite;
     .art1 {
         display: flex;
-        // margin: 5% 0;
         .photoWrapperArt1 {
             background-color: $wrapColor;
             position: relative;
@@ -129,6 +128,9 @@ nav {
             .blogText {
                 width: 55%;
                 text-align: right;
+                p {
+                    text-align: left;
+                }
                 button {
                     padding: 15px;
                     background-color: $mainGreen;
@@ -143,8 +145,437 @@ nav {
     }
 }
 
+.sec3 {
+    display: grid;
+    grid-template-columns: 50% 50% ;
+    grid-template-rows: 300px 300px ;
+    margin: 5% 0 3% 5%;
+    .topPicksSec {
+        position:relative;
+        margin-left: 12%;
+        margin-right: 8%;
+    }
+    .communitySec {
+        position:relative;
+        margin-right: 15%;
+        margin-left: 3%;
+    }
+    .blogSec {
+        position:relative;
+        margin-left: 12%;
+        margin-right: 8%;
+        i {
+            font-size: 27px;;
+        }
+    }
+    .getInTouchSec {
+        position:relative;
+        margin-right: 15%;
+        margin-left: 3%;
+    }
+    .icon::after {
+        content: '';
+        width: 47px;
+        height: 47px;
+        border-radius: 50%;
+        background-color: $mainGreen;
+        display: block;
+        position: absolute;
+        top: 2%;
+        left:5%;
+        z-index: -1;
+    }
+    i {
+        font-size: 29px;
+        position: absolute;
+        right:103%;
+        top: 12%;
+        z-index: 0;
+    }
+}
+
+.mapImage {
+    background-image: url(../../captured-final-assets/banner.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    height: 60vh;
+}
+
+.thisMonthProfileSec {
+    display: flex;
+    .lastImageContainer {
+        margin: 8% 5% 5% 10%;
+        .photoWrapper2 {
+            background-color: $wrapColor;
+            img {
+                position:relative;
+                bottom: 4vh;
+                right: 4vh;
+            }
+        }
+    }
+    .blogText {
+        margin: 4% 10% 0 0;
+        h3 {
+            margin-bottom: 0;;
+        }
+        button {
+            margin-top: 5%;
+            padding: 15px;
+            background-color: $mainGreen;
+            border:none;
+            a {
+                text-decoration: none;
+                color: $fontColor;
+            }
+        }
+    }
+}
+
+.gallery {
+    background-color: $mainWhite;
+    height: 70vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .galleryContainer {
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+        img {
+            width: 30%;
+        }
+    }
+}
+
+// Media Queries
+
+@media only screen and (max-width: 1550px) {
+    .homeHeader {
+            h1 {
+            padding-top: 40vh;
+        }
+    }
+    
+    .photoWrapper1 {
+        position:relative;
+        img {
+            right: 0;
+            top: -50vh;
+        }
+    }
+    .sec1 {
+        padding: 40vh 0 20vh 0;
+    }
+}
 
 
 
+@media only screen and (max-width: 1380px) {
+    .photoWrapper1 {
+        img {
+            width: 50%;
+            right: 0;
+            top: -50vh;
+        }
+    }
+    .sec1 {
+        padding: 20vh 0 20vh 0;
+    }
+}
 
+@media only screen and (max-width: 1100px) {
+    .homeHeader {
+        h1 {
+        padding-top: 45vh;
+        }
+    }
+    .photoWrapper1 {
+        img {
+            top:-50vh;
+        }
+    }
+    .sec1 {
+        padding: 20vh 0 20vh 0;
+    }
+    .sec2 {
+        .art1 {
+            flex-direction: column;
+            align-items: center;
+            .imageContainer {
+                width: 89%;
+                margin-bottom:2%;
+                img {
+                    width: 100%;
+                }
+            }
+            .blogTextContainer {
+                .blogText {
+                    width: 75%;
+                }
+            }
+        }
+        .art2 {
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 5vh;
+            .imageContainer {
+                width: 89%;
+                margin: 2%;
+                img { 
+                    width: 100%
+                }
+            }
+            .blogTextContainer {
+                .blogText {
+                    width: 75%;
+                    p {
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+ 
+    .thisMonthProfileSec {
+        padding-bottom: 7vh;
+    }
+    .gallery {
+        height: 45vh;
+    }
+}
 
+@media only screen and (max-width: 980px) {
+    .homeHeader {
+        h1 {
+        padding-top: 45vh;
+    }
+}
+    .photoWrapper1 {
+        img {
+            width: 50%;
+            top:-40vh;
+        }
+    }
+    .sec1 {
+        padding: 10vh 0 20vh 0;
+        p {
+            width: 80%;
+        }
+    }
+    .thisMonthProfileSec {
+        padding-top: 5vh;
+    }
+    .gallery {
+        height: 45vh;
+    }
+
+}
+
+@media only screen and (max-width: 760px) {
+    .homeHeader {
+        height: 80vh;
+            h1 {
+                font-size: 100px;
+                padding-top: 10vh;
+        }
+    }
+    .photoWrapper1 {
+        width: 100%;
+        text-align: center;
+        img {
+            position:relative;
+            top:-30vh;
+            border: 40px $wrapColor solid;
+            width: 90%;
+        }
+    }
+    .sec1 {
+        margin: -35vh 0 0 0;
+        p {
+            width: 90%;
+        }
+    }
+    .sec2 {
+        .art1 {
+            .blogTextContainer {
+                .blogText {
+                    width: 85%;
+                }
+            }
+        }
+        .art2 {
+            .blogTextContainer {
+                .blogText {
+                    width: 85%;
+                }
+            }
+        }
+    }
+    .thisMonthProfileSec {
+        flex-direction: column;
+        align-items: center;
+        .lastImageContainer {
+            width: 70%;
+            .photoWrapper2 {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+       
+        .blogText {
+            margin: 0 10% 0 10%;
+        }
+    }
+    .gallery {
+        height: 35vh;
+    }
+}
+
+@media only screen and (max-width: 670px) {
+    .sec1 {
+        margin: -35vh 0 -5vh 0;
+    }
+    .sec3 {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 250px 250px 250px 250px ;
+        margin: 5% 0 10% 10%; 
+        .topPicksSec {
+            margin-left: 10%;
+        }
+        .communitySec {
+            position:relative;
+            margin-left: 10%;
+            margin-right: 8%;
+        }
+        .blogSec {
+            margin-left: 10%;
+        }
+        .getInTouchSec {
+            position:relative;
+            margin-left: 10%;
+            margin-right: 8%;
+        }
+    }
+    .mapImage {
+        height: 40vh;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    .homeHeader {
+            h1 {
+                font-size: 85px;
+                padding-top: 15vh;
+        }
+    }
+    .sec1 {
+        margin: -8vh 0 -5vh 0;
+    }
+    .sec3 {
+        margin: 5% 0 10% 10%; 
+    }
+    .photoWrapper1 {
+        display:none;
+    }
+    .gallery {
+        height: 185vh;
+        .galleryContainer {
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            img {
+                width: 90%;
+                align-self: center;
+                margin: 1%;;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    .homeHeader {
+        height: 75vh;
+            h1 {
+                font-size: 75px;
+        }
+    }
+    .sec1 {
+        margin: -8vh 0 -8vh 0;
+        h3 {
+            text-align: center;
+        }
+        button {
+            margin-top: 5%;
+        }
+    }
+    .sec3 {
+        margin: 5% 0 10% 10%; 
+    }
+    .gallery {
+        height:155vh ;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .homeHeader {
+        height: 69vh;
+            h1 {
+                font-size: 65px;
+                padding-top:3vh;
+        }
+    }
+    .sec3 {
+        margin: 5% 0 40% 10%; 
+        .topPicksSec {
+            margin-bottom: 10%;
+        } 
+        .communitySec {
+            margin-top: 15%;
+        }
+        .blogSec {
+            margin-top: 25%;
+        }
+        .getInTouchSec {
+            margin-top: 30%;
+        }
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .homeHeader {
+        height: 75vh;
+            h1 {
+                font-size: 50px;
+        }
+    }
+    .sec3 {
+        margin: 5% 0 100% 10%; 
+        h4 {
+            font-size: 25px;
+        }
+        .icon::after {
+            width: 40px;
+            height: 40px;
+            top: 8%;
+            left:5%;
+        }
+        i {
+            font-size: 20px;
+            right:105%;
+            top: 18%;
+        }
+        .communitySec {
+            margin-top: 25%;
+        }
+        .blogSec {
+            margin-top: 55%;
+        }
+        .getInTouchSec {
+            margin-top: 80%;
+        }
+    }
+}
