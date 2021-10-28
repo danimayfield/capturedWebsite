@@ -515,36 +515,57 @@ body {
   width: 60%;
 }
 .responsiveFlexContainer .rightSectionBlog .blogTextBorder {
-  border-left: #FDFA69 3px solid;
-  border-bottom: #FDFA69 3px solid;
   position: relative;
+  padding-bottom: 1vh;
+  height: 100%;
 }
 .responsiveFlexContainer .rightSectionBlog .blogTextBorder .imageContainer {
   position: relative;
-  bottom: 23vh;
-  right: 3px;
-  width: 97%;
+  bottom: 10vh;
+  float: right;
+  width: 100%;
+  height: 84vh;
 }
 .responsiveFlexContainer .rightSectionBlog .blogTextBorder .imageContainer .photoWrapperBlog {
   background-color: #FDFA69;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  position: relative;
+  position: absolute;
+  width: 95%;
+  height: 91%;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
 }
-.responsiveFlexContainer .rightSectionBlog .blogTextBorder .imageContainer .photoWrapperBlog img {
-  position: relative;
-  bottom: 4vh;
-  left: 5vh;
-  width: 100%;
+.responsiveFlexContainer .rightSectionBlog .blogTextBorder .imageContainer img {
+  position: absolute;
+  width: 95%;
+  float: right;
+  z-index: 2;
+  right: 0;
+  top: 0;
+}
+.responsiveFlexContainer .rightSectionBlog .blogTextBorder:before {
+  content: " ";
+  background: #FDFA69;
+  display: block;
+  width: 90%;
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+}
+.responsiveFlexContainer .rightSectionBlog .blogTextBorder::after {
+  content: " ";
+  background: #FDFA69;
+  display: block;
+  width: 3px;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 .responsiveFlexContainer .rightSectionBlog .blogTextContainer {
-  margin-right: 20%;
-  margin-top: -15%;
-  margin-left: 6%;
+  margin: -15% 20% 0 6%;
 }
 .responsiveFlexContainer .rightSectionBlog .blogTextContainer h3 {
   margin-bottom: 0;
@@ -566,10 +587,10 @@ aside img {
 aside .asideWrapper {
   background-color: #FAFAFA;
   width: 28%;
-  padding-top: 53vh;
+  padding-top: 25%;
   padding-bottom: 3vh;
   position: absolute;
-  bottom: 10vh;
+  top: 33%;
   left: 12vh;
 }
 aside .asideWrapper .textWrapper {
@@ -692,23 +713,43 @@ aside .asideWrapper ul li::before {
 }
 
 @media only screen and (max-width: 1800px) {
+  .responsiveFlexContainer .rightSectionBlog .blogTextBorder .imageContainer {
+    height: 78vh;
+  }
+
+  aside .asideWrapper {
+    top: 33%;
+    padding-top: 25%;
+  }
+
   .commentForm form span input {
     width: 43.5%;
   }
 }
 @media only screen and (max-width: 1500px) {
+  .responsiveFlexContainer .rightSectionBlog .blogTextBorder .imageContainer {
+    height: 63vh;
+  }
+
   aside .asideWrapper {
-    bottom: 25vh;
-    padding-top: 43vh;
+    top: 33%;
+    padding-top: 25%;
   }
 }
 @media only screen and (max-width: 1350px) {
+  .responsiveFlexContainer .rightSectionBlog .blogTextBorder .imageContainer {
+    height: 57vh;
+  }
+
   aside .asideWrapper {
-    bottom: 43vh;
-    padding-top: 38vh;
+    top: 33%;
+    padding-top: 25%;
   }
 }
 @media only screen and (max-width: 1250px) {
+  .responsiveFlexContainer .rightSectionBlog .blogTextBorder .imageContainer {
+    height: 52vh;
+  }
   .responsiveFlexContainer .rightSectionBlog .blogTextBorder .blogTextContainer {
     margin-top: -20vh;
   }
@@ -736,6 +777,16 @@ aside .asideWrapper ul li::before {
     width: 40%;
   }
 }
+@media only screen and (max-width: 1050px) {
+  .responsiveFlexContainer .rightSectionBlog .blogTextBorder .imageContainer {
+    height: 44vh;
+  }
+}
+@media only screen and (max-width: 1050px) and (min-height: 1200px) {
+  .responsiveFlexContainer .rightSectionBlog .blogTextBorder .imageContainer {
+    height: 32vh;
+  }
+}
 @media only screen and (max-width: 980px) {
   .responsiveFlexContainer {
     display: -webkit-box;
@@ -748,20 +799,21 @@ aside .asideWrapper ul li::before {
   }
   .responsiveFlexContainer .rightSectionBlog {
     float: none;
-    width: 90%;
+    width: 100%;
   }
-  .responsiveFlexContainer .rightSectionBlog .blogTextBorder .photoWrapperBlog {
-    position: relative;
-    top: 1vh;
-    bottom: 0;
-    right: 0;
+  .responsiveFlexContainer .rightSectionBlog .blogTextBorder .imageContainer {
+    width: 100%;
+    height: 20vh;
   }
-  .responsiveFlexContainer .rightSectionBlog .blogTextBorder .photoWrapperBlog img {
-    bottom: 3vh;
-    left: 2vh;
+  .responsiveFlexContainer .rightSectionBlog .blogTextBorder .imageContainer .photoWrapperBlog {
+    display: none;
+  }
+  .responsiveFlexContainer .rightSectionBlog .blogTextBorder .imageContainer img {
+    width: 100%;
   }
   .responsiveFlexContainer .rightSectionBlog .blogTextBorder .blogTextContainer {
-    margin-top: 5%;
+    margin-top: 10%;
+    padding-top: 60%;
   }
   .responsiveFlexContainer aside {
     position: relative;
@@ -820,7 +872,7 @@ aside .asideWrapper ul li::before {
     width: 44%;
   }
 }
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 770px) {
   .commentForm form span input {
     width: 42%;
   }
@@ -833,11 +885,6 @@ aside .asideWrapper ul li::before {
 @media only screen and (max-width: 470px) {
   .blogHeader {
     height: 80vh;
-  }
-
-  .responsiveFlexContainer .rightSectionBlog .photoWrapperBlog img {
-    bottom: 1vh;
-    left: 1vh;
   }
 
   .comments {
