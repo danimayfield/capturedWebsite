@@ -19,21 +19,26 @@ body{
             border-left: $wrapColor 3px solid;
             border-bottom: $wrapColor 3px solid;
             position: relative;
-            .photoWrapperBlog {
-                background-color:$wrapColor;
-                display:flex;
-                justify-content: flex-end;
+            .imageContainer {
                 position:relative;
                 bottom: 23vh;
                 right: 3px;
                 width:97%;
-                img {
+                .photoWrapperBlog {
+                    background-color:$wrapColor;
+                    display:flex;
+                    justify-content: flex-end;
                     position:relative;
-                    bottom: 4vh;
-                    left: 5vh;
-                    width: 100%;
+                    
+                    img {
+                        position:relative;
+                        bottom: 4vh;
+                        left: 5vh;
+                        width: 100%;
+                    }
                 }
             }
+            
         }
         .blogTextContainer {
             margin-right: 20%;

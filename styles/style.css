@@ -519,7 +519,13 @@ body {
   border-bottom: #FDFA69 3px solid;
   position: relative;
 }
-.responsiveFlexContainer .rightSectionBlog .blogTextBorder .photoWrapperBlog {
+.responsiveFlexContainer .rightSectionBlog .blogTextBorder .imageContainer {
+  position: relative;
+  bottom: 23vh;
+  right: 3px;
+  width: 97%;
+}
+.responsiveFlexContainer .rightSectionBlog .blogTextBorder .imageContainer .photoWrapperBlog {
   background-color: #FDFA69;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -528,11 +534,8 @@ body {
       -ms-flex-pack: end;
           justify-content: flex-end;
   position: relative;
-  bottom: 23vh;
-  right: 3px;
-  width: 97%;
 }
-.responsiveFlexContainer .rightSectionBlog .blogTextBorder .photoWrapperBlog img {
+.responsiveFlexContainer .rightSectionBlog .blogTextBorder .imageContainer .photoWrapperBlog img {
   position: relative;
   bottom: 4vh;
   left: 5vh;
