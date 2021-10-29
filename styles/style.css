@@ -491,8 +491,48 @@ footer p {
     padding-top: 0;
   }
 
+  .contactForm {
+    margin-top: 10%;
+  }
+  .contactForm .contactFormContainer {
+    margin-top: 0;
+    position: static;
+    bottom: 0vh;
+    left: 0vh;
+  }
   .contactForm .contactFormContainer form span input {
     width: 35%;
+  }
+
+  footer {
+    margin-top: 35%;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .contactHeader h2 {
+    padding-top: 0;
+    background-color: #FAFAFA80;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .contactHeader {
+    height: 90vh;
+  }
+
+  footer {
+    margin-top: 40%;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .contactHeader {
+    height: 95vh;
+  }
+  .contactHeader h2 {
+    font-size: 65px;
+  }
+
+  footer {
+    margin-top: 85%;
   }
 }
 body {

@@ -193,7 +193,12 @@ footer {
         padding-top: 0;
     }
     .contactForm {
+        margin-top: 10%;
         .contactFormContainer {
+            margin-top: 0;
+            position:static;
+            bottom: 0vh;
+            left: 0vh;
             form {
                 span {
                     input{ 
@@ -202,5 +207,38 @@ footer {
                 }
             }
         }
+    }
+    footer {
+        margin-top: 35%;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .contactHeader {
+        h2 {
+            padding-top: 0;
+            background-color: #FAFAFA80;
+        }
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .contactHeader {
+        height: 90vh;
+    }
+    footer {
+        margin-top: 40%;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .contactHeader {
+        height: 95vh;
+        h2 {
+            font-size: 65px;
+        }
+    }
+    footer {
+        margin-top: 85%;
     }
 }
