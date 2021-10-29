@@ -536,19 +536,7 @@ nav {
         }
     }
     .sec3 {
-        margin: 5% 0 40% 10%; 
-        .topPicksSec {
-            margin-bottom: 10%;
-        } 
-        .communitySec {
-            margin-top: 15%;
-        }
-        .blogSec {
-            margin-top: 25%;
-        }
-        .getInTouchSec {
-            margin-top: 30%;
-        }
+        grid-template-rows: 350px;
     }
 }
 
@@ -560,9 +548,10 @@ nav {
         }
     }
     .sec3 {
-        margin: 5% 0 100% 10%; 
+        
+        grid-template-rows: 350px;
         h4 {
-            font-size: 25px;
+            font-size: 22px;
         }
         .icon::after {
             width: 40px;
@@ -574,15 +563,6 @@ nav {
             font-size: 20px;
             right:105%;
             top: 18%;
-        }
-        .communitySec {
-            margin-top: 25%;
-        }
-        .blogSec {
-            margin-top: 55%;
-        }
-        .getInTouchSec {
-            margin-top: 80%;
         }
     }
 }

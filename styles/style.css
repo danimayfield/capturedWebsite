@@ -1550,19 +1550,7 @@ nav ul li a:hover {
   }
 
   .sec3 {
-    margin: 5% 0 40% 10%;
-  }
-  .sec3 .topPicksSec {
-    margin-bottom: 10%;
-  }
-  .sec3 .communitySec {
-    margin-top: 15%;
-  }
-  .sec3 .blogSec {
-    margin-top: 25%;
-  }
-  .sec3 .getInTouchSec {
-    margin-top: 30%;
+    grid-template-rows: 350px;
   }
 }
 @media only screen and (max-width: 360px) {
@@ -1574,10 +1562,10 @@ nav ul li a:hover {
   }
 
   .sec3 {
-    margin: 5% 0 100% 10%;
+    grid-template-rows: 350px;
   }
   .sec3 h4 {
-    font-size: 25px;
+    font-size: 22px;
   }
   .sec3 .icon::after {
     width: 40px;
@@ -1589,14 +1577,5 @@ nav ul li a:hover {
     font-size: 20px;
     right: 105%;
     top: 18%;
-  }
-  .sec3 .communitySec {
-    margin-top: 25%;
-  }
-  .sec3 .blogSec {
-    margin-top: 55%;
-  }
-  .sec3 .getInTouchSec {
-    margin-top: 80%;
   }
 }
