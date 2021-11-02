@@ -80,7 +80,11 @@ body {
                     line-height: 32px;
                     text-transform: uppercase;
                     background-color: $mainGreen;
-                    border: none;
+                    border: 2px solid #ffffff00;
+                }
+                #submit:hover{
+                    border: 2px solid darken($mainGreen, 30%);
+                    cursor: pointer;
                 }
                 #message {
                     margin: 35px auto;
@@ -105,6 +109,44 @@ footer {
     }
 }
 
+
+.popUpButton:hover {
+    border: 2px solid darken($mainGreen, 30%);
+    cursor: pointer;
+}
+
+.popUpFadeIn {
+    opacity: 1;
+	animation-name: fadeIn;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
+}
+
+@keyframes fadeIn {
+    0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+    
+}
+
+.closePopUpC {
+    opacity: 0;
+    animation-name: fadeOut;
+	animation-timing-function: ease-out;
+	animation-duration: 1s;
+}
+
+@keyframes fadeOut {
+    0% {
+		opacity: 1;
+	}
+    100% {
+		opacity: 0; visibility: hidden;
+	}
+}
 
 // Media Queries
 @media only screen and (max-width: 2000px) {

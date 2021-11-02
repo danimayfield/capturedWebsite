@@ -46,15 +46,15 @@
                 <form action="submission.html" method="POST">
                     <span>
                         <label for="name" class="sr-only">Your Name:</label>
-                        <input type="text" name="name" id="name" placeholder="Name">
+                        <input type="text" name="name" id="name" placeholder="Name" class="input">
                     </span>
                     <span>
                         <label for="email" class="sr-only">Your Email Address:</label>
-                        <input type="email" name="email" id="email" placeholder="Email Address">
+                        <input type="email" name="email" id="email" placeholder="Email Address" class="input">
                     </span>
                     <div>
                         <label for="message" class="sr-only">Your Message:</label>
-                        <textarea id="message" name="message" rows="13" placeholder="Message"></textarea>
+                        <textarea id="message" name="message" rows="13" placeholder="Message" class="input"></textarea>
                     </div>
                     <div>
                         <input type="submit" value="Submit" id="submit">
@@ -63,8 +63,12 @@
                 <div class="formWrapper"></div>
             </div>
         </section>
+        <div class="submitPopUp">
+            <!-- Submit message will go here -->
+        </div>
     </div>
     <footer>
         <p>Copyright © 2018 HackerYou</p>
     </footer>
+    <script src="./script.js"></script>
 </body>
