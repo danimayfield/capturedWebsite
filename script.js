@@ -1,6 +1,6 @@
 // Get the form
 // Make a function where if the submit button is pressed a new div pops up saying the form is submitted.
-// Make the form disappear after another click?
+// Make the form disappear after another click
 // Stretch - make the pop up appear and disappear niceley
 
 
@@ -17,13 +17,14 @@ function formSubmit (e) {
     const nameEl = document.getElementById('name').value; //getting the values of the inputs
     const emailEl = document.getElementById('email').value;
     const messageEl = document.getElementById('message').value;
-    // Add info to popUpDiv
+
+    // Add info to popUpDiv:
     const popUpHeading = document.createElement('h4');
     const popUpPara = document.createElement('p');
     popUpHeading.textContent = "Thank you for contacting us!";
     popUpPara.textContent = "Rest assured we have received your message and we will contact you back shortly with a reply!";
     popUpButton.textContent = "Close";
-    popUpDiv.appendChild(popUpHeading);
+    popUpDiv.appendChild(popUpHeading); //Appending the text to the parent of popUpDiv
     popUpDiv.appendChild(popUpPara);
     popUpDiv.appendChild(popUpButton);
 
@@ -32,6 +33,7 @@ function formSubmit (e) {
     }
 
     if(nameEl && emailEl && messageEl) {
+        // If all three inputs are filled out, the following code is created:
         popUpDiv.classList.add("popUpFadeIn");
         popUpDiv.style.position = "absolute";
         popUpDiv.style.top = "40%";
@@ -49,13 +51,13 @@ function formSubmit (e) {
         popUpButton.classList.add("popUpButton");
         
 
-        // clear the input field:
+        // clear the input fields of the form:
         document.getElementById('name').value = ''
         document.getElementById('email').value = ''
         document.getElementById('message').value = ''
 
     } else if (!nameEl){
-        document.getElementById('name').style.border = "2px solid red";
+        document.getElementById('name').style.border = "2px solid red"; //red border is added if input is not filled out
     } else if (!emailEl){
         document.getElementById('email').style.border = "2px solid red";
     } else if (!messageEl){
@@ -68,7 +70,7 @@ function formSubmit (e) {
 form.addEventListener('submit', formSubmit)
 popUpButton.addEventListener('click', closePopUpF)
 
-
+// Function - to close the pop up afterwards
 function closePopUpF () {
     popUpDiv.classList.add("closePopUpC");
 }
