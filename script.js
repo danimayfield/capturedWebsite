@@ -3,20 +3,29 @@
 // Make the form disappear after another click?
 // Stretch - make the pop up appear and disappear niceley
 
+
 // Targets
 const form = document.querySelector('form');
 const popUpDiv = document.querySelector('.submitPopUp')
+const popUpButton = document.createElement('button')
 
 
 
-
-// Function
+// Function - to activate the pop up when submit button on form is clicked
 function formSubmit (e) {
-    e.preventDefault();
-    const nameEl = document.getElementById('name').value;
+    e.preventDefault(); //Prevent auto behaviour
+    const nameEl = document.getElementById('name').value; //getting the values of the inputs
     const emailEl = document.getElementById('email').value;
     const messageEl = document.getElementById('message').value;
-    
+    // Add info to popUpDiv
+    const popUpHeading = document.createElement('h4');
+    const popUpPara = document.createElement('p');
+    popUpHeading.textContent = "Thank you for contacting us!";
+    popUpPara.textContent = "Rest assured we have received your message and we will contact you back shortly with a reply!";
+    popUpButton.textContent = "Close";
+    popUpDiv.appendChild(popUpHeading);
+    popUpDiv.appendChild(popUpPara);
+    popUpDiv.appendChild(popUpButton);
 
     if(! nameEl || emailEl || messageEl) {
         
@@ -55,23 +64,12 @@ function formSubmit (e) {
     
 }
 
-// Add info to popUpDiv
-const popUpHeading = document.createElement('h4');
-const popUpPara = document.createElement('p');
-const popUpButton = document.createElement('button')
-popUpHeading.textContent = "Thank you for contacting us!";
-popUpPara.textContent = "Rest assured we have received your message and we will contact you back shortly with a reply!";
-popUpButton.textContent = "Close";
-popUpDiv.appendChild(popUpHeading);
-popUpDiv.appendChild(popUpPara);
-popUpDiv.appendChild(popUpButton);
-
 // Register the events
 form.addEventListener('submit', formSubmit)
 popUpButton.addEventListener('click', closePopUpF)
 
+
 function closePopUpF () {
     popUpDiv.classList.add("closePopUpC");
-  
 }
 
